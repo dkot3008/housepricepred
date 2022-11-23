@@ -17,7 +17,8 @@ pkgTest <- function(pkg){
 }
 
 # load necessary packages
-lapply(c("ggplot2", "stargazer", "tidyverse", "stringr", "broom", "plot_ly", "car"),  pkgTest)
+lapply(c("ggplot2", "stargazer", "tidyverse", "stringr", "broom", "plotly", "car"),  pkgTest)
+# lapply(c("plotly"), pkgTest)
 
 # function to save output to a file that you can read in later to your docs
 output_stargazer <- function(outputFile, appendVal=FALSE, ...) {
